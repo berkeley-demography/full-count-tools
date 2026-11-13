@@ -24,3 +24,7 @@ to check progress
 ### (optional) compress old .dat files to save space
 
 `zstd -12 --long=31 -T16 us1880e_usa_res.dat -o us1880e_usa_res.dat.zst`
+
+verify that the compression completed 
+
+`zstd -t --long=31 us1880e_usa_res.dat.zst && echo "OK"`
